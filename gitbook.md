@@ -47,3 +47,23 @@ $gitbook serve
 $gitbook build
 ```
 
+### 3. 使用github进行在线发布
+
+将制作好的gitbook使用github desktop将电子书所在文件夹推送到github远程仓库
+
+登录gitbook：https://www.gitbook.com/
+
+Create a new space，填写大致信息后，在Integrations配置中绑定自己的github仓库
+
+![1541163409604](assets/1541163409604.png)
+
+### 4. 步骤概括
+
+1. 安装git，使用git bash或git desktop创建一个本地仓库，例如F:\git\gitstudy文件夹（在此文件夹下会产生.git的隐藏文件夹，即为本地仓库）
+2. 使用gitbook init命令将该文件夹初始化，产生README.md 和 SUMMARY.md文件
+3. 使用Typora打开该文件夹进行新建笔记章节等markdown格式文件，并进行排版
+4. 使用github desktop将本地仓库push到github上
+5. 以github账户登录gitbook，新建一个space，关联github远程仓库，并作一些简单配置，**完成发布**
+6. Typora修改markdown文件，再次使用gitbook init和gitbook build命令更新电子书文件
+7. 重复步骤4
+
